@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Hotel Kanor : Reserve </title>
+		 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	</head>
+	<body background = "Reserve.jpg">
+		 <div class="container">
+			<div class="row">
+			<div class="col-md-3"> <a href = "/front"> <h4> Hotel Kanor </h4> </a> </div>
+			<div class="col-md-3"> <a href = "/about"> About Us </a> </div>
+			<div class="col-md-3"> <a href = "/list"> Rooms </a> </div>
+			<div class="col-md-3"> <a href = "/reserve"> Reserve </a> </div>
+			</div>
+		</div>
+		<h1> RESERVE </h1>
+		<form method="POST" action="/room">
+			<table class = "reserve">
+			<tr>
+				<td>
+					<select name="roomtype">
+						<option value="Double">Double</option>
+						<option value="Deluxe">Deluxe</option>
+						<option value="Suite">Suite</option>
+						<option value="The Kanor Experience">The Kanor Experience</option>
+					</select>
+				</td>
+				<td>
+					<form action="date.asp">
+						Date: <input type="date" name="date">
+						<input type="submit" value="Reserve" />
+					</form>
+				</td>
+			</tr>
+			</table>
+		</form>
+	</body>
+</html>
